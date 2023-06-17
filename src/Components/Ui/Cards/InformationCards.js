@@ -1,6 +1,6 @@
 import React from "react";
 
-const InformatioCards = ({ imagen, }) => {
+const InformatioCards = ({ imagen, hourSunday, hourMonday, hourTuesday, hourWednesday, hourThursday, hourFriday, hourSaturday, name, nametwo, namethree}) => {
     return (
         <div className='cardShadow'>
             <div className='contactGym'>
@@ -48,21 +48,10 @@ const InformatioCards = ({ imagen, }) => {
                             <th>{hourSunday}</th>
                             <th>{hourMonday}</th>
                             <th>{hourTuesday}</th>
-                            <th>5:30 - 12:00</th>
-                            <th>5:30 - 12:00</th>
-                            <th>5:30 - 12:00</th>
-                            <th>9:00 - 12:00</th>
-                        </tr>
-                        <tr>
-                            <th>{hourSunday}</th>
-                            <th>{hourMonday}</th>
-                            <th>{hourTuesday}</th>
-                            <th>15:00 - 21:00</th>
-                            <th>15:00 - 21:00</th>
-                            <th>15:00 - 21:00</th>
-                        </tr>
-                        <tr>
-                            <th>Noche</th>
+                            <th>{hourWednesday}</th>
+                            <th>{hourThursday}</th>
+                            <th>{hourFriday}</th>
+                            <th>{hourSaturday}</th>
                         </tr>
                     </tbody>
                 </table>
@@ -71,16 +60,24 @@ const InformatioCards = ({ imagen, }) => {
                         <div className='gymTrainer'>
                             <img className='profileImage' src='https://res.cloudinary.com/duxhiuugx/image/upload/v1684872003/gymA_txhmrr.jpg'/>
                         </div>
-                        <p>Nombre de Entrenador</p>
-                        <p>Telefono: xxx xxx xx</p>
+                        <p>{name}</p>
                     </div>
                     <div className='trainerGym'>
                         <div className='gymTrainer'>
                             <img className='profileImage' src='https://res.cloudinary.com/duxhiuugx/image/upload/v1684872003/gymA_txhmrr.jpg'/>
                         </div>
-                        <p>Nombre de Entrenador</p>
-                        <p>Telefono: xxx xxx xx</p>
+                        <p>{nametwo}</p>
                     </div>
+                    <div className='trainerGym'>
+                        <div className='gymTrainer'>
+                            <img className='profileImage' src='https://res.cloudinary.com/duxhiuugx/image/upload/v1684872003/gymA_txhmrr.jpg'/>
+                        </div>
+                        <p>{namethree}</p>
+                    </div>
+                </div>
+                <div className="buttonFavorites">
+                    <button>Añadir a Favoritos</button>
+                    <button>Leer Comentarios</button>
                 </div>
             </div>
         </div>

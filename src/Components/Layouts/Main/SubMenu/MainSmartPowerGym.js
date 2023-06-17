@@ -1,8 +1,9 @@
 import React from "react";
+import DataSmartPowerGym from '../../../Data/DataSmarPowerGym'
 
 function MainSmartPowerGym() {
     return (
-        <div></div>
+        <div className="smart-data"><DataSmartPowerGym/></div>
     )
 }
 

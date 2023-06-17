@@ -350,6 +350,7 @@ input[type="text"] {
 /* PAGEGYMHEADER */
 /* PAGESERVICESHEADER */
 /* PAGEHEADERSMARTPOWERG */
+/* PAGEROUTINASHEADER */
 .thebase-bc-home {
   text-decoration: none;
   color: black;
@@ -621,8 +622,7 @@ li.style6 {
 
 /* INFORMATIONCARDS */
 .cardShadow {
-  width: 990px;
-  margin: 1rem;
+  width: 90%;
   height: 470px;
   background: white;
   padding: 1rem;
@@ -634,16 +634,17 @@ li.style6 {
   display: flex;
 }
 .schedule {
-  width: 100%;
+  width: 70%;
   border-collapse: collapse;
+  margin-left: 7rem;
 }
 .schedule th,
 .schedule td {
-  border: 1px solid #ccc;
+  border: 1px solid #000;
   padding: 8px;
 }
 .schedule th {
-  background-color: #f0f0f0;
+  background-color: #FFF000;
   font-weight: bold;
 }
 .profileCircle {
@@ -660,7 +661,8 @@ li.style6 {
   padding: 2rem;
   height: 220px;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .trainerGym {
   padding: 1rem;
@@ -686,7 +688,7 @@ li.style6 {
 .contact {
   width: fit-content;
   height: fit-content;
-  background-color: rgb(238, 238, 238);
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -733,4 +735,85 @@ li.style6 {
 }
 .socialContainer:hover .socialSvg {
   animation: slide-in-top 0.3s both;
+}
+.buttonFavorites {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2rem;
+}
+.buttonFavorites button {
+  margin: 2rem;
+  background-color: #000;
+  color: #FFF000;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* MAINSMARTPOWERGYM */
+.smart-data {
+  background-color: #000;
+  padding: 1rem;
+}
+
+/* DATASMARTPOWERGYM */
+.datas {
+  display: flex;
+  justify-content: center;
+}
+
+/* ROUTINAS */
+.routinasPage {
+  width: 100%;
+  height: 100%;
+}
+
+/* ROUTINESCARD */
+.routines {
+  width: 200px;
+  height: 254px;
+  display: flex;
+  margin: 0.5rem;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: rgb(236, 236, 236);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.buttonVideo {
+  padding: 1rem;
+  background-color: #FFF000;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* ROUTINEFACTURE */
+.facture {
+  display: flex;
+  flex-direction: column;
+}
+.facture hr {
+  width: 90%;
+}
+.factures {
+  display: flex;
+}
+
+/* DATAROUTINES */
+.cards-routines {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 3rem;
+}
+
+/* MAINROUTINAS */
+.mainRoutines {
+  background-color: #000;
 }

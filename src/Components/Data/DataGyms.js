@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import GymCard from "../../Ui/Cards/GymCard";
+import GymCard from "../Ui/Cards/GymCard";
 
 function DataGym() {
     const [searchText, setSearhText] = useState('')
