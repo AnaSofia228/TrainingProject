@@ -5,6 +5,7 @@ import Gyms from './Pages/Gyms';
 import Services from './Pages/Services';
 import SmartPG from './Pages/SubPages/SmartPowerGym';
 import Routinas from './Pages/SubPages/Routinas';
+import Store from './Pages/SubPages/Store';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       //SubPage
       <Route path='/Smart_Power_Gym' element={<SmartPG/>}/>
       <Route path='/Rutinas' element={<Routinas/>}/>
+      <Route path='/Tienda' element={<Store/>}/>
     </Routes>
   );
 }

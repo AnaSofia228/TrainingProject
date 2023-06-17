@@ -351,6 +351,7 @@ input[type="text"] {
 /* PAGESERVICESHEADER */
 /* PAGEHEADERSMARTPOWERG */
 /* PAGEROUTINASHEADER */
+/* PAGESTOREHEADER */
 .thebase-bc-home {
   text-decoration: none;
   color: black;
@@ -523,7 +524,6 @@ input[type="text"] {
   line-height: 1.15;
   box-shadow: 0px 10px 20px -18px;  
   margin-left: 4rem;
-  margin-top: 2rem;
 }
 .input:focus {
   border-bottom: 5px solid #FFFF00;
@@ -792,16 +792,26 @@ li.style6 {
   cursor: pointer;
 }
 
-/* ROUTINEFACTURE */
-.facture {
+/* STORECARD */
+.products {
+  width: 300px;
+  height: 354px;
   display: flex;
+  margin: 1rem;
   flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: rgb(236, 236, 236);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-.facture hr {
-  width: 90%;
-}
-.factures {
-  display: flex;
+.buttonCart {
+  padding: 1rem;
+  background-color: #FFF000;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 /* DATAROUTINES */
@@ -813,7 +823,38 @@ li.style6 {
   padding: 3rem;
 }
 
+/* DATASTORE */
+.cards-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.filterProducts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.filterProducts svg {
+  color: #FFF000;
+  width: 40px;
+  cursor: pointer;
+  height: 40px;
+}
+
 /* MAINROUTINAS */
 .mainRoutines {
   background-color: #000;
+}
+
+/* MAINSTORE */
+.mainStore {
+  background-color: #000;
+}
+
+/* STORE */
+.storePage {
+  width: 100%;
+  height: 100%;
 }
